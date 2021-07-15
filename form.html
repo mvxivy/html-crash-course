@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Формы</title>
+</head>
+
+<body>
+  <div>
+    <a href="/">Назад</a>
+  </div>
+
+  <!-- Form -->
+  <h2>Форма регистрации</h2>
+  <form action="/register.php" method="POST">
+    <div style="margin-bottom: 10px">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" placeholder="E-mail" required>
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="name">Имя</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div style="margin-bottom: 10px">
+      <label>
+        Пароль
+        <input type="password" name="password">
+      </label>
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="gender">Пол</label>
+      <select name="gender" id="gender">
+        <option selected disable hidden></option>
+        <option value="male">Мужчина</option>
+        <option value="female">Женщина</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="age">Возраст</label>
+      <input type="number" id="age" name="age" min="18" value="18">
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="birthday">День рождения</label>
+      <input type="date" id="birthday" name="birthday" format="dd.mm.YYYY">
+    </div>
+    <div style="margin-bottom: 10px">
+      <label for="about" style="display: block">Обо мне</label>
+      <textarea name="about" id="about" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" value="Регистрация" style="margin: 10px 0">
+    <!-- <button type="submit" style="margin: 10px 0">Регистрация</button> -->
+  </form>
+</body>
+
+</html>
